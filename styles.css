@@ -1,0 +1,68 @@
+body{ 
+    background-color: #e4a499;
+}
+
+  header{
+        min-height: 180px;
+        font-size: 120%;
+        margin-top: 50px;
+        text-align: center;
+        border-bottom: 4px solid #e4a499;
+        color: #a16055;
+  }
+   header a:link{text-decoration: none;color: #f5f5f5;}
+    header a:visited{text-decoration: none;color: #f5f5f5;}
+    header a:hover{text-decoration: none;color: #f5f5f5;}
+
+   nav{
+        position: fixed;  /*HARDCODE the x,y location*/
+        top:0;
+        left:0;    /*left side should be at 0 on the page*/
+        text-align: right;
+        width: 100%;
+        padding: .5em;
+        padding-right: 0;
+        background-color: #bc7b6f;
+        margin: 0;
+        z-index:9999;
+    }
+    nav a{
+        text-decoration: none;
+        transition: all 0.3s;   /*CSS Animations*/
+        display:block;
+        text-align: center;
+    }
+    /* This is similar to MIT's button.click */
+    nav a:hover{
+        color: #28BBDC;
+        padding-left: 10px;  /* subtle move */
+    }
+    nav a:link{color: #3F2860}
+    nav a:visited{color: #5a322a}
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;       /*nowrap means should be in one line*/
+        justify-content: flex-end;
+        margin: 0;
+        font-size: 1.2em;
+        list-style-type: none;
+    }
+    nav li{
+        width: 7em;
+        padding: 0 1em 0 1em;  /*top and bottom are 0 and left and right are 1em*/
+        display:inline;
+    }
+.contain{
+    padding: 2em;
+    background-color: #bc7b6f;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+.form{
+    background-color: #bc7b6f;
+    color: #f0cfc8;
+    font-size: 1.1rem;
+
+
+}
